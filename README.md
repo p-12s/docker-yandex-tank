@@ -1,13 +1,15 @@
 # docker-yandex-tank
-
 **[Official docs](https://yandextank.readthedocs.io/en/latest/install.html)**  
 Checked on macOS system with docker installed  
+  
+![report](https://github.com/p-12s/docker-yandex-tank/blob/main/overload-report.png?raw=true)
 
 ## Installation
 1. Clone repo and change load-config file:
 ```
 git clone https://github.com/p-12s/docker-yandex-tank.git
 cd docker-yandex-tank
+vi load.yaml
 ```
 
 2. Change site-url in 'load.yaml'.  
@@ -31,4 +33,3 @@ docker run \
     direvius/yandex-tank
 ```
 5. Get web link from output: https://overload.yandex.net/№######
-![report](https://github.com/p-12s/docker-yandex-tank/blob/main/overload-report.png?raw=true)
