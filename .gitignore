@@ -1,0 +1,5 @@
+docker-remove-all.sh
+.DS_Store
+**/logs/
+**/*.log
+token.txt

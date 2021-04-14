@@ -1,0 +1,20 @@
+phantom:
+  address: www.your-site.com:80 # [Target's address]:[target's port]
+  ssl: false
+  uris:
+    - /
+    - /kaarten.html
+  load_profile:
+    load_type: rps # schedule load by defining requests per second
+    schedule: line(1, 20, 30s) # from 1 to 20 rps on 30s time period
+
+console:
+  enabled: true # enable console output
+
+telegraf:
+  enabled: false # let's disable telegraf monitoring for the first time
+
+overload:
+  enabled: true
+  package: yandextank.plugins.DataUploader
+  token_file: "token.txt"
